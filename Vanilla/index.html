@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://kit.front awesome.com/3bfd3ce9e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>vanilla js T3</title>
+  </head>
+  <body>
+    <main>
+      <div class="grid">
+        <!-- turnindicator -->
+        <div class="turn">
+          <i class="fa-solid fa-x turquoise"></i>
+          <p>Player 1,you're up!</p>
+        </div>
+
+        <!--drop down menu-->
+        <div class="menu">
+          <button class="menu-btn" data-id="menu-button">
+            Actions
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="items border hidden" data-id="menu-poppover">
+            <button data-id="rest-btn">Reset</button>
+            <button data-id="new-round-button">New Round</button>
+          </div>
+        </div>
+
+        <!-- game board -->
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+        <div class="square shadow"></div>
+
+        <!-- score board -->
+        <div class="back shadow" sytle="background-color: var(--turquoise)">
+          <p>Player 1</p>
+          <span data-id="player1-stats">0 wins</span>
+        </div>
+        <div class="score shadow" style="background-color: var(--light-gray)">
+          <p>Ties</p>
+          <span data-id="ties">0</span>
+        </div>
+        <div class="score shadow" style="background-color: var(--yellow)">
+          <p>Player 2</p>
+          <span data-id="player2 stats">0 wins</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Original project by
+        <a href="https://twitter.com/megfdev">@megdev</a>
+        <a href="https://twitter.com Ivan00sto">@Ivan00sto</a>
+      </p>
+
+      <p>
+        Refactored by
+        <a href="https://twitter.com/zg_dev">@zg_dev</a>
+      </p>
+    </footer>
+
+    <!--modal that opens game ends-->
+    <div class="modal hidden">
+      <div class="modal-contents">
+        <p>Player 1 wins!</p>
+        <button>Play again</button>
+      </div>
+    </div>
+    
+    <script src="./js/app.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+:root {
+  --dark-gray: #1a2a32;
+  --gray: #2e4756;
+  --turquoise: #3cc4bf;
+  --yellow: #f2b147;
+  --light-gray: #d3d3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--dark-gray);
+  height: 100%;
+}
+
+body {
+  padding: 90px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  margin-top: 250px;
+}
+
+tr {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+td {
+  height: 100%;
+  width: 100%;
+  background-color: var(--gray);
+  margin-left: 50px;
+  padding: 30px;
+  border-radius: 20px;
+  color: var(--turquoise);
+  justify-content: space-around;
+  font-size: 2rem;
+}

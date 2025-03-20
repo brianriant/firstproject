@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css"/>
+    <title>vanilla js t3</title>
+  </head>
+  <body>
+    <main>
+      <div class="grid" data-id="grid">
+        <div class="turn" data-id="turn">
+          <i class="fa-solid fa-x turquoise"></i>
+          <p>plaryer 1, you are up!</p>
+        </div>
+
+        <div class="menu">
+          <button class="menu-btn" data-id="menu-button">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="items border hidden" data-id="menu-poppover">
+            <button data-id="rest-btn">Reset</button>
+            <button data-id="new-round-button">New Round</button>
+          </div>
+        </div>
+
+        <div id="1" class="square shadow"></div>
+        <div id="2" class="square shadow"></div>
+        <div id="3" class="square shadow"></div>
+        <div id="4" class="square shadow"></div>
+        <div id="5" class="square shadow"></div>
+        <div id="6" class="square shadow"></div>
+        <div id="7" class="square shadow"></div>
+        <div id="8" class="square shadow"></div>
+        <div id="9" class="square shadow"></div>
+        
+        <div class="score shadow" sytle="background-color: var[--turquoise]">
+          <p>Player 1</p>
+          <span data-id="player1-stats">0 wins</span>
+        </div>
+        <div class="score shadow" style="background-color: vvar--light-gray]">
+          <p>Ties</p>
+          <span data-id="ties">0</span>
+          </div>
+          <div class="score shadow" style="background-color: var[--yellow]">
+            <p>Player 2</p>
+            <span data-id="player2 stats">0 wins</span>
+          </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>
+        original project body
+        <a href="https://twitter.com/negdev">https://twitter.com/negdev</a>and 
+        <a href="https://twitter.com/ivan00sto">https://twitter.com/ivan00sto</a>
+      </p>
+    </footer>
+  </body>
+</html>
